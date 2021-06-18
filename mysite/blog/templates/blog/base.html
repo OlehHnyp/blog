@@ -9,7 +9,7 @@
   <body>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="sidebar">
-      <h2>My blog</h2>
+      <h2><a href="{% url 'blog:post_list' %}">My blog</a></h2>
       <p>This is F1 blog. It have being written {% total_posts %} posts so far.</p>
       <p><a href="{% url 'blog:post_feed' %}">Subscribe to my RSS feed</a></p>
       <h3>Latest posts</h3>
